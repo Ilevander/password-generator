@@ -5,4 +5,22 @@ __pycache__/
 .vscode/
 .pytest_cache/
 dist/
+build/# Python cache
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
+
+# Packaging
+*.egg-info/
+dist/
 build/
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
