@@ -1,0 +1,21 @@
+@startuml
+
+title Password Generator - Use Case Diagram
+
+actor User
+
+rectangle "Password Generator System" {
+
+    usecase "Generate Password" as UC1
+    usecase "Specify Password Length" as UC2
+    usecase "Validate Password Strength" as UC3
+    usecase "Use Command Line Interface" as UC4
+
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+
+@enduml
