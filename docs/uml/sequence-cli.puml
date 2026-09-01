@@ -1,0 +1,21 @@
+@startuml
+
+title Password Generator - CLI Sequence Diagram
+
+actor User
+
+participant "CLI" as CLI
+participant "Password Generator" as Generator
+
+User -> CLI: Launch application
+CLI -> CLI: Parse arguments
+
+User -> CLI: Specify password length
+CLI -> Generator: generate_password(length)
+
+Generator -> Generator: Generate random characters
+Generator --> CLI: Return generated password
+
+CLI -> User: Display generated password
+
+@enduml

@@ -12,7 +12,7 @@ rectangle "Password Generator System" {
     usecase "Use Command Line Interface" as UC4
 
 }
-
+ 
 User --> UC1
 User --> UC2
 User --> UC3
