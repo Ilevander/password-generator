@@ -85,3 +85,17 @@ password-generator/
 | `pyproject.toml` | Python project configuration |
 ## (To add ...)
 | `.github/workflows/` | CI/CD automation |
+
+## UML Diagrams
+
+### Use Case Diagram
+
+![Use Case Diagram](docs/uml/graph-use-case-diagram.png)
+
+### Class Diagram
+
+![Class Diagram](docs/uml/graph-class-diagram.png)
+
+### Sequence Diagram
+
+![Sequence Diagram](docs/uml/graph-sequence-cli.png)
