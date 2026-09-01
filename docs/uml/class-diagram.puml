@@ -1,0 +1,28 @@
+@startuml
+
+title Password Generator - Class Diagram
+
+class PasswordGenerator {
+    - length: int
+    - characters: str
+
+    + generate_password(length: int): str
+}
+
+class PasswordValidator {
+    + validate_password(password: str): bool
+    - has_digit(password: str): bool
+    - has_uppercase(password: str): bool
+    - has_lowercase(password: str): bool
+}
+
+class CLI {
+    + main(): None
+    - parse_arguments(): int
+    - display_password(password: str): None
+}
+
+CLI --> PasswordGenerator : uses
+CLI --> PasswordValidator : uses
+
+@enduml
